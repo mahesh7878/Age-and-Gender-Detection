@@ -1,0 +1,5 @@
+flask
+opencv-python
+pymongo
+
+pip install -r requirements.txt

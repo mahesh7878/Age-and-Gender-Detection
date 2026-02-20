@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age Gender Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Age and Gender Detection</h1>
+    <img src="{{ url_for('video_feed') }}" width="750" height="480" alt="Live video feed displaying real-time age and gender detection analysis. Detected faces are highlighted with bounding boxes showing estimated age ranges and gender classifications. The feed updates continuously as faces appear in the camera view.">
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
