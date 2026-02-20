@@ -1,5 +1,4 @@
-flask
-opencv-python
-pymongo
-
+﻿cd c:\Users\Maheswara Achari\OneDrive\Desktop\age_gender_detection
+dir
 pip install -r requirements.txt
+python app.py
