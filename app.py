@@ -5,7 +5,7 @@ from db import insert_detection, register_user, check_user
 import os
 
 app = Flask(__name__)
-app.secret_key = os.environ.get('SECRET_KEY', 'your_secret_key')  # Use env variable in production
+app.secret_key = os.environ.get('SECRET_KEY', 'fallback-secret-key')  # Use env variable in production
 
 # Load models
 try:
@@ -106,4 +106,4 @@ def logout():
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)  # Set debug=False for production
+    app.run(host='0.0.0.0', port=port, debug=False)  # debug=False for production
